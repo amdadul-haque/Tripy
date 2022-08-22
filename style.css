@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;700&family=Barlow:wght@400;500;700&display=swap');
+:root{
+  --primary: #E61C5D;
+  --white:#fff;
+  --secondary: #808080;
+  --dark-seconday:#112B3C;
+  --large: 48px;
+  --medium: 40px;
+  --regular: 20px;
+  --small: 16px;
+  --extra-small:14px;
+}
+*{
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar > *{
+  font-size: 20px;
+}
+
+#login{
+  margin-right: 30px;
+}
+#register-btn{
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  width: 122px;
+  height: 60px;
+  border-radius: 45px;
+}
+
+.navMenu .dot {
+  width: 60px;
+  height: 6px;
+  background: #fddb3a;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a{
+	position: relative;
+}
+nav ul li a::after{
+	content: '';
+	width: 0;
+	height: 5px;
+	left: 0;
+	top: 90%;
+	border-radius: 2px;
+	position: absolute;
+	background: var(--primary);
+	transition: 0.5s;
+}
+nav ul li a:hover::after{
+	width: 50%;
+	transform: translateX(50%);
+}
+.header-title{
+  font-size: 60px;
+  font-weight: bold;
+}
+.hero-subtitle{
+  font-size: var(--regular);
+  color: var(--secondary);
+}
+
+.header-search{
+  height: 80px;
+  width: 90%;
+  border-radius: 58px;
+  background-color: var(--white);
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
+}
+
+.header-search-location{
+  font-size: 12px;
+}
+.header-search-city{
+  font-size: 12px;
+  font-weight: bold;
+}
+.header-search i{
+  color: var(--primary);
+}
+.search-icon i,.newsletter-email i{
+  height: 48px;
+  width: 48px;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 50%; 
+}
+.search-icon i{
+  color: var(--white);
+}
+
+.about-us-text{
+  color: var(--primary);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.about-us-title{
+  font-weight: bold;
+  font-size: var(--large);
+}
+.about-us-description{
+  font-size: var(--regular);
+  color: var(--secondary);
+}
+.insight .number{
+  font-size: var(--medium);
+  color: var(--primary);
+  font-weight: bold;
+}
+.insight .desc{
+  font-size: var(--small);
+  color: var(--secondary);
+  text-transform: capitalize;
+}
+.footer-title{
+  font-weight: bold;
+  font-size: 18px;
+}
+.footer-desc{
+  font-size: var(--extra-small);
+  color: var(--dark-seconday);
+}
+footer{
+  padding: 100px 0;
+}
+footer ul{
+  list-style: none;
+  padding: 0;
+}
+footer a{
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--dark-seconday);
+}
+
+footer a:hover{
+  color:var(--secondary);
+}
+.newsletter-email{
+  width: 270px;
+  height: 51px;
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 55px;
+}
+.newsletter-email input{
+  border: none;
+  outline: none;
+  color: var(--seconday);
+}
+.newsletter-email input:focus{
+  border: none;
+  /* outline: none; */
+
+}
+.newsletter-email i{
+  height: 32px;
+  width: 32px;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 50%; 
+}
+.center-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .icons i{
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  background-color: var(--primary);
+  color: var(--white);
+  font-style: normal;
+}
